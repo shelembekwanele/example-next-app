@@ -35,7 +35,7 @@ export default async function Home() {
   return (
     <main className="">
       <div className="p-3 absolute flex items-center gap-2 shadow-lg rounded-lg">
-        <Image src={"https://portfolio-pjqy.vercel.app/logo.png"} width={50} height={50}/>
+        <Image src={"https://portfolio-pjqy.vercel.app/logo.png"} width={50} height={50} alt=""/>
         <small>
         <a className="underline" href="https://portfolio-pjqy.vercel.app/" target="_blank">Kwanele</a>
         </small>
