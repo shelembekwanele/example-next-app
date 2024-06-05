@@ -8,7 +8,7 @@ import Image from "next/image";
 const filter =new BadWordsFilter();
 
 async function addTodo(content){
-    "use server";
+    'use server'
     if(filter.isProfane(content)){
       throw new Error("Inapropriate language.")
     }
@@ -17,13 +17,13 @@ async function addTodo(content){
 }
 
 async function deleteTodo(id){
-  'use server';
+  'use server'
   await prisma.todo.delete({where:{id}})
   redirect("/")
 }
 
 async function toggleTodo(id,complete){
-  'use server';
+  'use server'
   await prisma.todo.update({where:{id},data:{complete}})
   redirect("/")
 }
@@ -39,6 +39,9 @@ export default async function Home() {
         <small>
         <a className="underline" href="https://portfolio-pjqy.vercel.app/" target="_blank">Kwanele</a>
         </small>
+      </div>
+      <div>
+        
       </div>
       <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16">
         <div className="px-4 py-2">
