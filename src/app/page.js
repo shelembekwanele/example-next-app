@@ -32,6 +32,8 @@ export default async function Home() {
 
   const todos=await prisma.todo.findMany();
 
+  console.log({todos})
+
   return (
     <main className="">
       <div className="p-3 absolute flex items-center gap-2 shadow-lg rounded-lg">
